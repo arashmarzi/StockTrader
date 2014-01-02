@@ -1,6 +1,6 @@
 package user;
 
-import java.io.*;
+import java.util.*;
 
 public class Player {
 	// holds player's name
@@ -8,19 +8,23 @@ public class Player {
 	// holds player's capital
 	private double capital;
 	/* dynamic array with each element representing a company */
-	private int[] numOfStocks; 
-	/* dynamic array with each element representing a company */
-	private String[] stockCompanies;
+	
 	// holds players total profits based on stocks
 	private double totalProfit;
 	
-	public boolean buyCompanyStock(){
+	/* buy stock from a company */
+	public boolean buyCompanyStock(String companyName, int numStocksBought, double price){
+		// check to see if stock from company is already owned
 		
+		return true;
 	}
 	
-	public boolean sellCompanyStock(){
-		
+	/* sell owned stock of a company*/
+	public boolean sellCompanyStock(String companyName, int numStocksSold, double price){
+		return true;
 	}
+	
+	
 
 	/**
 	 * @return the name
@@ -48,34 +52,6 @@ public class Player {
 	 */
 	public void setCapital(double capital) {
 		this.capital = capital;
-	}
-
-	/**
-	 * @return the numOfStocks
-	 */
-	public int[] getNumOfStocks() {
-		return numOfStocks;
-	}
-
-	/**
-	 * @param numOfStocks the numOfStocks to set
-	 */
-	public void setNumOfStocks(int[] numOfStocks) {
-		this.numOfStocks = numOfStocks;
-	}
-
-	/**
-	 * @return the stockCompanies
-	 */
-	public String[] getStockCompanies() {
-		return stockCompanies;
-	}
-
-	/**
-	 * @param stockCompanies the stockCompanies to set
-	 */
-	public void setStockCompanies(String[] stockCompanies) {
-		this.stockCompanies = stockCompanies;
 	}
 
 	/**
