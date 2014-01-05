@@ -1,16 +1,27 @@
 package user;
 
-import java.util.*;
+import datastructure.*;
 
 public class Player {
 	// holds player's name
 	private String name; 
 	// holds player's capital
 	private double capital;
-	/* dynamic array with each element representing a company */
-	
+	// array with elements holding company names
+	private String[] companyNames;
+	// array with elements holding stock owned of companys in companyNames
+	private int[] companyStock;
 	// holds players total profits based on stocks
 	private double totalProfit;
+	
+	Player(String name) {
+		this.name = name;
+		this.capital = 1000;
+		this.companyNames = new String[10];
+		this.companyStock = new int[10];
+		this.totalProfit = 0;
+		
+	}
 	
 	/* buy stock from a company */
 	public boolean buyCompanyStock(String companyName, int numStocksBought, double price){
