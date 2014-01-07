@@ -1,7 +1,5 @@
 package user;
 
-import datastructure.*;
-
 public class Player {
 	// holds player's name
 	private String name; 
